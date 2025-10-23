@@ -17,12 +17,12 @@ a:hover {
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(214, 214, 214);
     font-family: sans-serif;
 }
 
 .off-screen-menu {
-    background-color:  rgb(26, 28, 34);
+    background-color:  #333;
     height: 350px;
     width: 500px;
     position: fixed;
@@ -86,8 +86,9 @@ nav {
 }
 
 footer{
-    background-color: black;
-    color: white;
+    background-color: #333;
+    font-family: 'Gill Sans';
+    color: rgb(255, 255, 255);
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -97,6 +98,32 @@ footer{
 }
 
 .marca{
+    font-family: 'Gill Sans';
     color: white;
     align-items: center;
+}
+
+.titulo{
+   font-family: 'Gill Sans';
+   text-align: center;
+   font-size: 3rem;
+}
+
+.p0 {
+    font-family: 'Gill Sans';
+    max-width: 800px;                
+    margin: 80px auto;               
+    padding: 40px 60px;              
+    background-color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    line-height: 1.6;                
+}
+
+.p1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 40px;
+    color: #333;                     
 }
