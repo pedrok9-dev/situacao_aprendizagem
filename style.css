@@ -186,3 +186,19 @@ footer{
     justify-content: center; 
     align-items: center; 
 }
+
+button{
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px; 
+    font-size: 16px;   
+    min-width: 120px;  
+    cursor: pointer;
+}
+
+.script1{
+    border: 2px solid #444;
+    border-radius: 6px;
+    padding: 10px;
+}
