@@ -189,24 +189,22 @@
       <br>
       <br>
       <div class="scripts">
-      <p class="p2">Script para ordenar números de 1 a 20, em ordem crescente e decrescente.</p>
-      <br>
-      <p class="p2">Ordem errada: 7,14,2,19,11,4,16,1,9,6,18,3,12,20,5,17,8,13,10,15</p>
-      <br>
-      <button onclick="ordenarCres()">ordenar de forma crescente</button>
-      <br>
-      <br>
-      <button onclick="ordenarDesc()">ordenar de forma decrescente</button>
-      <br>
-      <br>
-      <div id="res"></div>
+        <p class="p2">Script para ordenar números de 1 a 20, em ordem crescente e decrescente.</p>
+        <br>
+        <p class="p2">Ordem errada: 7,14,2,19,11,4,16,1,9,6,18,3,12,20,5,17,8,13,10,15</p>
+        <br>
+        <button onclick="ordenarCres()">Ordenar de forma crescente</button>
+        <br>
+        <br>
+        <button onclick="ordenarDesc()">ordenar de forma decrescente</button>
+        <br>
+        <div id="res"></div>
       </div>
       <br>
       <div class="scripts">
         <p class="p2">Script para ordenar 10 números aleatórios de 1 a 20</p>
         <br>
         <button onclick="ordenarAleat()">Ordenar num. aleatórios</button>
-        <br>
         <br>
         <div id="res2"></div>
       </div>
@@ -216,7 +214,6 @@
         <br>
         <button onclick="somar220()">Somar</button>
         <br>
-        <br>
         <div id="res3"></div>
       </div>
       <br>
@@ -224,6 +221,56 @@
         <p class="p2">Script que gera uma matriz 3x3 de números aleatórios de 1 a 20</p>
         <br>
         <button onclick="matriz()">Gerar</button>
+        <br>
+        <div id="res4"></div>
+      </div>
+      <br>
+      <div class="scripts">
+        <p class="p2">Script para calcular o IMC de uma pessoa</p>
+        <br>
+        <label for="peso">Digite o seu peso</label><br>
+        <input type="text" id="peso" placeholder="Ex.:70">
+        <br>
+        <label for="altura">Digite a sua altura</label><br>
+        <input type="text" id="altura" placeholder="Ex.:1.75">
+        <br>
+        <br>
+        <button onclick="IMC()">Calcular</button>
+        <br>
+        <div id="res5"></div>
+      </div>
+      <br>
+      <div class="scripts">
+        <p class="p2">Script para converter temperaturas</p>
+        <br>
+        <p class="p2">Digite 'C' para converter para celsius</p>
+        <p class="p2">Digite 'F' para converter para farenheit</p>
+        <br>
+        <label for="temp">Digite qual temperatura você quer converter</label><br>
+        <input type="text" id="temp"><br>
+        <label for="C">Caso você escolheu converter para farenheit, Digite a temp. em celsius</label><br>
+        <input type="text" id="C" placeholder="Temp. em Celsius"><br>
+        <label for="F">Caso você escolheu converter para celsius, Digite a temp. em farenheit</label><br>
+        <input type="text" id="F" placeholder="Temp em farenheit"><br>
+        <br>
+        <button onclick="converter()">converter</button>
+        <br>
+        <div id="res6"></div>
+      </div>
+      <br>
+      <div class="scripts">
+        <p class="p2">Script de busca linear</p>
+        <br>
+        <label for="vetor">Vetor (separe por vírgula):</label>
+        <input type="text" id="vetor" placeholder="Ex: 3, 8, 12, 7, 5">
+        <br>
+        <label for="valor">Valor a procurar:</label>
+        <input type="number" id="valor" placeholder="Valor a procurar">
+        <br>
+        <br>
+        <button onclick="buscar()">Buscar</button>
+        <br>
+        <div id="res7"></div>
       </div>
     </section>
   </main>

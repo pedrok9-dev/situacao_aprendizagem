@@ -3,8 +3,8 @@ const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 
 hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
+    hamMenu.classList.toggle("active");
+    offScreenMenu.classList.toggle("active");
 });
 
 let res = document.getElementById('res')
@@ -14,13 +14,13 @@ let val = 0
 
 res.innerHTML = ` `
 
-function ordenarCres(){
-    for( let j = 0; j < arr.length - 1; j++){
-        for(let i = 0; i < arr.length - j - 1; i++){
-            if(arr[i] > arr[i+1]){
+function ordenarCres() {
+    for (let j = 0; j < arr.length - 1; j++) {
+        for (let i = 0; i < arr.length - j - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
                 val = arr[i]
-                arr[i] = arr[i+1]
-                arr[i+1] = val
+                arr[i] = arr[i + 1]
+                arr[i + 1] = val
             }
         }
     }
@@ -29,13 +29,13 @@ function ordenarCres(){
 
 }
 
-function ordenarDesc(){
-    for( let j = 0; j < arr.length - 1; j++){
-        for(let i = 0; i < arr.length - j - 1; i++){
-            if(arr[i] < arr[i+1]){
+function ordenarDesc() {
+    for (let j = 0; j < arr.length - 1; j++) {
+        for (let i = 0; i < arr.length - j - 1; i++) {
+            if (arr[i] < arr[i + 1]) {
                 val = arr[i]
-                arr[i] = arr[i+1]
-                arr[i+1] = val
+                arr[i] = arr[i + 1]
+                arr[i + 1] = val
             }
         }
     }
@@ -50,24 +50,24 @@ let val2 = 0
 
 res2.innerHTML = ` `
 
-function numAleat(min,max){
+function numAleat(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
 }
 
-function ordenarAleat(){
+function ordenarAleat() {
 
-    for(let i = 0; i < 10; i++){
-        arrAleat[i] = numAleat(1,20)
+    for (let i = 0; i < 10; i++) {
+        arrAleat[i] = numAleat(1, 20)
     }
 
     let arrOriginal = [...arrAleat]
 
-    for( let j = 0; j < arrAleat.length - 1; j++){
-        for(let i = 0; i < arrAleat.length - j - 1; i++){
-            if(arrAleat[i] > arrAleat[i+1]){
+    for (let j = 0; j < arrAleat.length - 1; j++) {
+        for (let i = 0; i < arrAleat.length - j - 1; i++) {
+            if (arrAleat[i] > arrAleat[i + 1]) {
                 val2 = arrAleat[i]
-                arrAleat[i] = arrAleat[i+1]
-                arrAleat[i+1] = val2
+                arrAleat[i] = arrAleat[i + 1]
+                arrAleat[i + 1] = val2
             }
         }
     }
@@ -83,16 +83,133 @@ let num = []
 
 res3.innerHTML = ` `
 
-function numAleat220(min,max){
+function numAleat220(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
 }
 
-function somar220(){
-    for(let i = 0; i < 10; i++){
-        num[i] = numAleat220(1,220)
+function somar220() {
+    for (let i = 0; i < 10; i++) {
+        num[i] = numAleat220(1, 220)
         soma += num[i]
     }
 
     res3.innerHTML += `Os números sorteados foram: ${num}<br>`
     res3.innerHTML += `A soma total foi: ${soma}`
+}
+
+let res4 = document.getElementById('res4')
+
+let mat = []
+
+res4.innerHTML = ` `
+
+function gerarAleatorio(min, max) {
+    return Math.floor(Math.random() * (max - min) + min)
+}
+
+function matriz() {
+    let n = 3, min = 1, max = 20
+
+    for (let i = 0; i < n; i++) {
+        mat[i] = []
+        for (let j = 0; j < n; j++) {
+            mat[i][j] = gerarAleatorio(min, max)
+        }
+    }
+    let texto = "A matriz gerada foi:<br>"
+    for (let i = 0; i < mat.length; i++) {
+        texto += `[ ${mat[i].join(", ")} ]<br>`
+    }
+    res4.innerHTML += texto
+}
+
+let res5 = document.getElementById('res5')
+
+function IMC(){
+    let altura = Number(document.getElementById('altura').value)
+    let peso = Number(document.getElementById('peso').value)
+    let imc = 0
+
+    res5.innerHTML = ` `
+
+    imc = peso / (altura * altura)
+    res5.innerHTML += `Seu imc é de: ${imc.toFixed(2)}<br>`
+
+    if(imc <= 18.5){
+        res5.innerHTML += `Magreza`
+    }else if(imc > 18.5 && imc <= 24.9){
+        res5.innerHTML += `Peso normal`
+    }else if(imc >= 25 && imc <= 29.9){
+        res5.innerHTML += `Sobrepeso`
+    }else if(imc >= 30 && imc <= 39.9){
+        res5.innerHTML += `Obesidade`
+    }else if(imc >= 40){
+        res5.innerHTML += `Obesidade grave`
+    }
+}
+
+let res6 = document.getElementById('res6')
+
+function ConvParaCelsius(F){       //essa função é para converter de farenheit para celsius
+    return (F - 32) * (5/9)
+}
+
+function ConvParaFarenheit(C){  //já essa função é para converter de celsius para farenheit
+    return (C * (9/5)) + 32
+}
+
+function converter(){
+    let temp = document.getElementById('temp').value
+    let C = Number(document.getElementById('C').value)
+    let F = Number(document.getElementById('F').value)
+    let tempFinal = 0.0
+
+    res6.innerHTML = ` `
+
+    switch(temp){
+        case 'C':
+        tempFinal = ConvParaCelsius(F)
+        res6.innerHTML += `A temperatura em celsius é de: ${tempFinal.toFixed(2)} Graus`
+        break
+        case 'c':
+        tempFinal = ConvParaCelsius(F)
+        res6.innerHTML += `A temperatura em celsius é de: ${tempFinal.toFixed(2)} Graus`
+        break
+        case 'F':
+        tempFinal = ConvParaFarenheit(C)
+        res6.innerHTML += `A temperatura em Farenheit é de: ${tempFinal.toFixed(2)} Graus`
+        break
+        case 'f':
+        tempFinal = ConvParaFarenheit(C)
+        res6.innerHTML += `A temperatura em Farenheit é de: ${tempFinal.toFixed(2)} Graus`
+        break
+        default:
+        res6.innerHTML += `Letra inválida!! Digite novamente!`
+    }
+}
+
+let res7 = document.getElementById('res7')
+
+function buscaLinear(vetor, valor) {
+    for (let i = 0; i < vetor.length; i++) {
+        if (vetor[i] === valor) {
+            return i; // achou
+        }
+    }
+    return -1; // não achou
+}
+
+function buscar() {
+    let texto = document.getElementById("vetor").value;
+    let valor = Number(document.getElementById("valor").value);
+
+    let vetor = texto.split(",").map(n => Number(n.trim()));
+
+    let pos = buscaLinear(vetor, valor);
+
+    if (pos !== -1) {
+        res7.innerHTML = `Valor encontrado na posição ${pos + 1}.`;
+    } else {
+        res7.innerHTML = "Valor não encontrado.";
+    }
 }
