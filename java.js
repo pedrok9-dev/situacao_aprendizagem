@@ -12,7 +12,6 @@ let res = document.getElementById('res')
 let arr = [7, 14, 2, 19, 11, 4, 16, 1, 9, 6, 18, 3, 12, 20, 5, 17, 8, 13, 10, 15]
 let val = 0
 
-res.innerHTML = ` `
 
 function ordenarCres() {
     for (let j = 0; j < arr.length - 1; j++) {
@@ -25,6 +24,7 @@ function ordenarCres() {
         }
     }
 
+    res.innerHTML = ` `
     res.innerHTML += `ordem crescente: ${arr} <br>`
 
 }
@@ -40,6 +40,7 @@ function ordenarDesc() {
         }
     }
 
+    res.innerHTML = ` `
     res.innerHTML += `ordem decrescente: ${arr} <br>`
 
 }
@@ -48,7 +49,7 @@ let res2 = document.getElementById('res2')
 let arrAleat = []
 let val2 = 0
 
-res2.innerHTML = ` `
+
 
 function numAleat(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
@@ -72,6 +73,7 @@ function ordenarAleat() {
         }
     }
 
+    res2.innerHTML = ` `
     res2.innerHTML += `Ordem errada: ${arrOriginal}<br>`
     res2.innerHTML += `Ordem certa: ${arrAleat}`
 }
@@ -81,7 +83,6 @@ let res3 = document.getElementById('res3')
 let soma = 0
 let num = []
 
-res3.innerHTML = ` `
 
 function numAleat220(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
@@ -93,6 +94,7 @@ function somar220() {
         soma += num[i]
     }
 
+    res3.innerHTML = ` `
     res3.innerHTML += `Os números sorteados foram: ${num}<br>`
     res3.innerHTML += `A soma total foi: ${soma}`
 }
@@ -101,7 +103,6 @@ let res4 = document.getElementById('res4')
 
 let mat = []
 
-res4.innerHTML = ` `
 
 function gerarAleatorio(min, max) {
     return Math.floor(Math.random() * (max - min) + min)
@@ -120,6 +121,7 @@ function matriz() {
     for (let i = 0; i < mat.length; i++) {
         texto += `[ ${mat[i].join(", ")} ]<br>`
     }
+    res4.innerHTML = ` `
     res4.innerHTML += texto
 }
 
@@ -130,9 +132,9 @@ function IMC(){
     let peso = Number(document.getElementById('peso').value)
     let imc = 0
 
-    res5.innerHTML = ` `
 
     imc = peso / (altura * altura)
+    res5.innerHTML = ` `
     res5.innerHTML += `Seu imc é de: ${imc.toFixed(2)}<br>`
 
     if(imc <= 18.5){
@@ -202,6 +204,7 @@ function buscaLinear(vetor, valor) {
 function buscar() {
     let texto = document.getElementById("vetor").value;
     let valor = Number(document.getElementById("valor").value);
+    res7.innerHTML = ` `
 
     let vetor = texto.split(",").map(n => Number(n.trim()));
 
