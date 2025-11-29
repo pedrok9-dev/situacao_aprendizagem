@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./java.js"defer></script>
-    <title>Fundamentos de Rede</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./java.js" defer></script>
+  <title>Fundamentos de Rede</title>
 </head>
+
 <body>
-    <header>
+  <header>
     <div class="off-screen-menu">
       <ul>
         <li><a href="./index.html">home</a></li>
@@ -28,108 +30,327 @@
       </div>
       <h1 class="marca">NextTheis</h1>
     </nav>
-    </header>
+  </header>
+  <br>
+  <br>
+  <main>
+    <h1 class="titulo">Fundamentos de Redes</h1>
     <br>
-    <br>
-    <main>
-      <h1>Fundamentos de Redes</h1>
-      <section class="p0">
+    <section class="p0">
       <p class="p1">O que são Redes de Computadores?</p>
       <br>
-      <p class="p2">Redes de computadores são um conjunto de dispositivos conectados entre si (como computadores, celulares, servidores, roteadores e switches) que trocam informações por meio de algum tipo de comunicação — geralmente através de cabos, ondas de rádio (Wi-Fi) ou fibra óptica.</p>
+      <p class="p2">Redes de computadores são um conjunto de dispositivos conectados entre si (como computadores,
+        celulares, servidores, roteadores e switches) que trocam informações por meio de algum tipo de comunicação —
+        geralmente através de cabos, ondas de rádio (Wi-Fi) ou fibra óptica.</p>
       <br>
-       <div class="img">
-          <img src="./img/redeDeComputador.png" alt="img-algoritimo">
-        </div>
-        <br>
-        <p class="p2">O objetivo principal de uma rede é compartilhar recursos e informações, como arquivos, internet, impressoras, mensagens e serviços. Quando esses dispositivos conseguem se comunicar seguindo regras chamadas protocolos (como o TCP/IP), eles formam uma rede funcional.</p>
-        <br>
-        <br>
-        <p class="p3">Rede mínima:</p>
-        <br>
-        <p class="p2">Uma rede mínima é a forma mais simples de uma rede de computadores, contendo apenas o essencial para que dois ou mais dispositivos consigam se comunicar. Ela não precisa de equipamentos avançados; basta ter os dispositivos conectados entre si por algum meio (como cabo ou Wi-Fi) e configurados para trocar informações. Em resumo, é o menor conjunto possível de elementos que permite a comunicação entre máquinas.</p>
+      <div class="img">
+        <img src="./img/redeDeComputador.png" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p2">O objetivo principal de uma rede é compartilhar recursos e informações, como arquivos, internet,
+        impressoras, mensagens e serviços. Quando esses dispositivos conseguem se comunicar seguindo regras chamadas
+        protocolos (como o TCP/IP), eles formam uma rede funcional.</p>
+      <br>
+      <br>
+      <p class="p3">Rede mínima:</p>
+      <br>
+      <p class="p2">Uma rede mínima é a forma mais simples de uma rede de computadores, contendo apenas o essencial para
+        que dois ou mais dispositivos consigam se comunicar. Ela não precisa de equipamentos avançados; basta ter os
+        dispositivos conectados entre si por algum meio (como cabo ou Wi-Fi) e configurados para trocar informações. Em
+        resumo, é o menor conjunto possível de elementos que permite a comunicação entre máquinas.</p>
     </section>
 
     <section class="p0">
       <p class="p1">O que é a internet?</p>
       <br>
-      <p class="p2">A internet é uma grande rede mundial que interliga milhões de computadores e dispositivos ao redor do planeta, permitindo que eles troquem informações entre si. Ela funciona como um conjunto gigantesco de redes menores conectadas, usando um conjunto de regras chamado TCP/IP, que garante que os dados sejam enviados e recebidos corretamente.</p>
+      <p class="p2">A internet é uma grande rede mundial que interliga milhões de computadores e dispositivos ao redor
+        do planeta, permitindo que eles troquem informações entre si. Ela funciona como um conjunto gigantesco de redes
+        menores conectadas, usando um conjunto de regras chamado TCP/IP, que garante que os dados sejam enviados e
+        recebidos corretamente.</p>
       <br>
-       <div class="img">
-          <img src="./img/internet1.png" alt="img-algoritimo">
-        </div>
-        <br>
-        <p class="p2">A internet possibilita uma série de serviços, como navegar em sites, enviar e receber e-mails, assistir vídeos, usar redes sociais, jogar online, acessar arquivos na nuvem e muito mais. Não existe um “dono” da internet; ela é formada por milhares de organizações, provedores, empresas e governos que mantêm seus próprios equipamentos interconectados.</p>
-        <br>
-        <br>
-        <p class="p1">O que compõe?</p>
-        <br>
-        <p class="p4">1. Dispositivos dos usuários</p>
-        <br>
-        <p class="p2">Computadores, celulares, tablets, smart TVs, consoles e qualquer equipamento que acessa a internet.</p>
-        <br>
-        <p class="p4">2. Provedores de Internet (ISPs)</p>
-        <br>
-        <p class="p2">Empresas que fornecem acesso, como Vivo, Claro, Oi, etc. Eles conectam os usuários à rede global.</p>
-        <br>
-        <p class="p4">3. Infraestrutura física</p>
-        <br>
-        <p class="p2"> - Cabos de fibra óptica terrestres</p>
-        <p class="p2"> - Cabos submarinos que ligam continentes</p>
-        <p class="p2"> - Satélites</p>
-        <p class="p2"> - Torres de comunicação</p>
-        <br>
-        <p class="p4">4. Roteadores e switches</p>
-        <br>
-        <p class="p2">Equipamentos que direcionam e organizam o caminho dos dados pela rede, garantindo que cada informação chegue ao destino correto.</p>
-        <br>
-        <p class="p4">5. Servidores</p>
-        <br>
-        <p class="p2">Máquinas que armazenam sites, bancos de dados, aplicativos, vídeos e outros conteúdos acessados pelos usuários.</p>
-        <br>
-        <p class="p4">6. Protocolos de comunicação</p>
-        <br>
-        <p class="p2">Conjunto de regras que permitem a troca de dados, como:</p>
-        <br>
-        <p class="p2"> - TCP/IP (base da internet)</p>
-        <p class="p2"> - HTTP/HTTPS (para páginas web)</p>
-        <p class="p2"> - DNS (para traduzir nomes de sites em endereços IP)</p>
-        <br>
-        <p class="p4">7. Serviços e aplicações</p>
-        <br>
-        <p class="p2">Plataformas e sistemas que usamos diariamente: redes sociais, streaming, e-mail, jogos online, buscadores, etc.</p>
-        <br>
+      <div class="img">
+        <img src="./img/internet1.png" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p2">A internet possibilita uma série de serviços, como navegar em sites, enviar e receber e-mails,
+        assistir vídeos, usar redes sociais, jogar online, acessar arquivos na nuvem e muito mais. Não existe um “dono”
+        da internet; ela é formada por milhares de organizações, provedores, empresas e governos que mantêm seus
+        próprios equipamentos interconectados.</p>
+      <br>
+      <br>
+      <p class="p1">O que compõe?</p>
+      <br>
+      <p class="p4">1. Dispositivos dos usuários</p>
+      <br>
+      <p class="p2">Computadores, celulares, tablets, smart TVs, consoles e qualquer equipamento que acessa a internet.
+      </p>
+      <br>
+      <p class="p4">2. Provedores de Internet (ISPs)</p>
+      <br>
+      <p class="p2">Empresas que fornecem acesso, como Vivo, Claro, Oi, etc. Eles conectam os usuários à rede global.
+      </p>
+      <br>
+      <p class="p4">3. Infraestrutura física</p>
+      <br>
+      <p class="p2"> - Cabos de fibra óptica terrestres</p>
+      <p class="p2"> - Cabos submarinos que ligam continentes</p>
+      <p class="p2"> - Satélites</p>
+      <p class="p2"> - Torres de comunicação</p>
+      <br>
+      <p class="p4">4. Roteadores e switches</p>
+      <br>
+      <p class="p2">Equipamentos que direcionam e organizam o caminho dos dados pela rede, garantindo que cada
+        informação chegue ao destino correto.</p>
+      <br>
+      <p class="p4">5. Servidores</p>
+      <br>
+      <p class="p2">Máquinas que armazenam sites, bancos de dados, aplicativos, vídeos e outros conteúdos acessados
+        pelos usuários.</p>
+      <br>
+      <p class="p4">6. Protocolos de comunicação</p>
+      <br>
+      <p class="p2">Conjunto de regras que permitem a troca de dados, como:</p>
+      <br>
+      <p class="p2"> - TCP/IP (base da internet)</p>
+      <p class="p2"> - HTTP/HTTPS (para páginas web)</p>
+      <p class="p2"> - DNS (para traduzir nomes de sites em endereços IP)</p>
+      <br>
+      <p class="p4">7. Serviços e aplicações</p>
+      <br>
+      <p class="p2">Plataformas e sistemas que usamos diariamente: redes sociais, streaming, e-mail, jogos online,
+        buscadores, etc.</p>
+      <br>
     </section>
 
     <section class="p0">
       <p class="p1">O que é web?</p>
       <br>
-      <p class="p2">A Web (ou World Wide Web) é um dos principais serviços disponíveis na internet. Ela é o conjunto de páginas, sites e conteúdos que você acessa por meio de um navegador, como Chrome, Firefox, Edge ou Safari.</p>
+      <p class="p2">A Web (ou World Wide Web) é um dos principais serviços disponíveis na internet. Ela é o conjunto de
+        páginas, sites e conteúdos que você acessa por meio de um navegador, como Chrome, Firefox, Edge ou Safari.</p>
       <br>
       <p class="p2">A Web funciona usando três elementos fundamentais:</p>
-        <br>
-        <p class="p2"> - Navegadores (browsers): programas usados para acessar e visualizar páginas.</p>
-        <p class="p2"> - Servidores web: computadores onde os sites e arquivos estão armazenados.</p>
-        <p class="p2"> - Protocolos, principalmente o HTTP ou HTTPS, que definem como as páginas e informações são enviadas e recebidas.</p>
-        <br>
-       <div class="img">
-          <img src="./img/world-wide-web1.png" alt="img-algoritimo">
-        </div>
-        <br>
-        <p class="p2">Na prática, a Web é tudo aquilo que você vê quando acessa um endereço como www.google.com ou www.youtube.com. Ela permite navegar entre páginas através de links, ver textos, imagens, vídeos, formulários e utilizar diversos serviços interativos.</p>
+      <br>
+      <p class="p2"> - Navegadores (browsers): programas usados para acessar e visualizar páginas.</p>
+      <p class="p2"> - Servidores web: computadores onde os sites e arquivos estão armazenados.</p>
+      <p class="p2"> - Protocolos, principalmente o HTTP ou HTTPS, que definem como as páginas e informações são
+        enviadas e recebidas.</p>
+      <br>
+      <div class="img">
+        <img src="./img/world-wide-web1.png" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p2">Na prática, a Web é tudo aquilo que você vê quando acessa um endereço como www.google.com ou
+        www.youtube.com. Ela permite navegar entre páginas através de links, ver textos, imagens, vídeos, formulários e
+        utilizar diversos serviços interativos.</p>
     </section>
 
     <section class="p0">
       <p class="p1">Mapa global de fibra óptica </p>
-        <br>
-       <div class="img">
-          <img src="./img/mapa_gloobal.png" alt="img-algoritimo">
-        </div>
+      <br>
+      <div class="img">
+        <img src="./img/mapa_gloobal.png" alt="img-algoritimo">
+      </div>
     </section>
-    </main>
-    <br>
-    <footer>
-      <p>By NextTheis &copy; &trade; </p>
-    </footer>
+
+    <section class="p0">
+      <p class="p1">Componentes de hardware de uma rede wi-fi</p>
+      <br>
+      <br>
+      <p class="p2">Uma rede Wi-Fi é formada por vários componentes de hardware que permitem transmitir e receber sinais
+        sem fio. O principal deles é o roteador Wi-Fi, responsável por transformar o sinal recebido do modem em ondas de
+        rádio que serão distribuídas pela casa ou ambiente. O modem, por sua vez, conecta a rede local ao provedor de
+        Internet e entrega o sinal ao roteador.</p>
+      <br>
+      <p class="p2">As antenas Wi-Fi, presentes no roteador ou nos access points, são fundamentais, pois emitem e
+        recebem o sinal de rádio utilizado na comunicação sem fio. Em redes corporativas ou mais complexas, um switch
+        pode ser usado para multiplicar conexões cabeadas e alimentar diversos equipamentos da rede. Para que os
+        dispositivos possam se conectar ao Wi-Fi, eles precisam de placas de rede sem fio (Wireless NICs), que já vêm
+        embutidas em notebooks, celulares e tablets, podendo também ser externas, como adaptadores USB.</p>
+      <br>
+      <div class="img">
+        <img src="./img/roteador.png" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p2">Mesmo em redes totalmente sem fio, os cabos de rede (Ethernet) continuam importantes, pois ligam o
+        modem ao roteador e conectam switches e pontos de acesso. Por fim, há também os sistemas de alimentação, que
+        podem ser fontes comuns ou PoE (Power over Ethernet), que fornecem energia para access points diretamente pelo
+        cabo de rede. Esses componentes juntos garantem que uma rede Wi-Fi funcione com alcance, estabilidade e
+        desempenho adequados.</p>
+      <br>
+      <br>
+      <p class="p1">Componentes de hardware de uma rede local com cabo de rede</p>
+      <br>
+      <br>
+      <p class="p2">Uma rede cabeada é composta, antes de tudo, por cabos de rede (Ethernet), geralmente do tipo Cat5e,
+        Cat6 ou superiores, que fazem a conexão física entre os dispositivos. Para distribuir essas conexões entre
+        vários computadores, utiliza-se um switch, que é o equipamento responsável por receber os dados e encaminhá-los
+        para o destino correto dentro da rede. Em redes domésticas simples, o próprio roteador pode ter portas
+        suficientes para isso, mas em redes maiores o switch é essencial.</p>
+      <br>
+      <p class="p2">Outro componente importante é o roteador, que pode ou não integrar a função de switch. Ele organiza
+        o tráfego interno da rede, fornece endereços IP e, quando conectado a um modem, libera acesso à Internet. O
+        modem, quando existe, conecta a rede local ao provedor de Internet, convertendo o sinal recebido (fibra, cabo,
+        DSL, etc.) em um sinal utilizável pelo roteador.</p>
+      <br>
+      <div class="img">
+        <img src="./img/caboDeRede-removebg-preview.png" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p2">Cada dispositivo da rede precisa de uma placa de rede Ethernet (NIC), que pode ser interna (embutida
+        na placa-mãe) ou externa (USB). Em instalações maiores, utilizam-se também patch panels, que organizam os cabos
+        vindos das diversas salas ou pontos de rede, facilitando manutenção e organização. Para complementar, podem
+        existir racks, que são estruturas metálicas para acomodar switches, patch panels, roteadores e outros
+        equipamentos de forma segura e organizada.</p>
+      <br>
+      <p class="p2">Por fim, todos esses componentes dependem de fontes de alimentação ou sistemas PoE (Power over
+        Ethernet), quando aplicável, que permitem energizar alguns dispositivos diretamente pelo cabo de rede. Esses
+        elementos trabalham em conjunto para garantir uma rede cabeada estável, rápida e de alta confiabilidade.</p>
+    </section>
+
+    <section class="p0">
+      <p class="p1">Protocolo de comunicação</p>
+      <br>
+      <br>
+      <p class="p2">Um protocolo de comunicação é um conjunto de regras e padrões que define como dois ou mais
+        dispositivos de uma rede devem se comunicar, trocar dados e entender as mensagens enviadas entre si. Ele
+        funciona como uma “língua comum” entre computadores, garantindo que todos sigam o mesmo jeito de iniciar a
+        comunicação, transmitir informações, identificar erros, finalizar conexões e até confirmar recebimento. Sem
+        protocolos, cada equipamento funcionaria de um jeito próprio e seria impossível haver comunicação organizada
+        entre máquinas, redes ou sistemas diferentes.</p>
+      <br>
+      <p class="p2">Exemplos conhecidos de protocolos:</p>
+      <br>
+      <p class="p2"> <strong> - HTTP/HTTPS</strong>usados para acessar páginas web</p>
+      <br>
+      <p class="p2"> <strong> - TCP/IP</strong>base da comunicação na Internet</p>
+      <br>
+      <p class="p2"> <strong> - FTP</strong>transferência de arquivos</p>
+      <br>
+      <p class="p2"> <strong> - SMTP/POP3/IMAP</strong>envio e recebimento de e-mails</p>
+    </section>
+
+    <section class="p0">
+      <p class="p1">Modelo OSI</p>
+      <br>
+      <br>
+      <p class="p2">O modelo OSI (Open Systems Interconnection) é um modelo de referência criado para padronizar como os
+        dados são transmitidos entre computadores em uma rede. Ele divide o processo de comunicação em 7 camadas, cada
+        uma com uma função específica, permitindo que diferentes sistemas e equipamentos consigam se comunicar de forma
+        organizada e compatível.</p>
+      <br>
+      <p class="p2">O principal objetivo do modelo OSI é explicar e estruturar como a comunicação de rede funciona,
+        facilitando o desenvolvimento de protocolos, equipamentos e soluções de rede.</p>
+      <br>
+      <div class="img">
+        <img src="./img/modeloOsi.jpg" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p3">As 7 camadas do modelo OSI:</p>
+      <br>
+      <p class="p2"> <strong> 1. Física: </strong>trata da transmissão de bits através de cabos, sinais elétricos e
+        conectores.</p>
+      <br>
+      <p class="p2"> <strong> 2. Enlace: </strong>organiza os dados em quadros (frames), controla erros e acesso ao
+        meio.</p>
+      <br>
+      <p class="p2"> <strong> 3. Rede: </strong>determina rotas para enviar pacotes; inclui o protocolo IP.</p>
+      <br>
+      <p class="p2"> <strong> 4. Transporte: </strong>garante a entrega confiável dos dados; inclui o TCP e o UDP.</p>
+      <br>
+      <p class="p2"> <strong> 5. Sessão: </strong>controla o início, manutenção e fim das conexões entre dispositivos.
+      </p>
+      <br>
+      <p class="p2"> <strong> 6. Apresentação: </strong>formata, comprime e criptografa os dados.</p>
+      <br>
+      <p class="p2"> <strong> 7. Aplicação: </strong>onde os aplicativos interagem com a rede (HTTP, FTP, DNS etc.).</p>
+      <br>
+      <br>
+      <p class="p1">Modelo TCP/IP</p>
+      <br>
+      <br>
+      <p class="p2">O modelo TCP/IP é um conjunto de protocolos de comunicação que define como os dados são transmitidos
+        na Internet. Ele é o modelo realmente utilizado pelas redes atuais (diferente do OSI, que é apenas um modelo
+        teórico). Seu objetivo é permitir que diferentes dispositivos e redes se comuniquem de forma padronizada, mesmo
+        quando usam tecnologias distintas. Foi criado pelo Departamento de Defesa dos EUA e recebeu esse nome por causa
+        de seus dois protocolos principais: TCP (Transmission Control Protocol) e IP (Internet Protocol).</p>
+      <br>
+      <div class="img">
+        <img src="./img/modeloTcpIp.png" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p3">As 4 camadas do modelo TCP/IP:</p>
+      <br>
+      <p class="p2"> <strong> 1. Aplicação: </strong>reúne funções das camadas superiores do OSI; é onde ficam os
+        protocolos de uso direto dos aplicativos, como HTTP, HTTPS, DNS, FTP, SMTP e outros.</p>
+      <br>
+      <p class="p2"> <strong> 2. Transporte: </strong>garante o envio dos dados entre origem e destino; utiliza
+        protocolos como TCP (confiável) e UDP (rápido, porém sem garantia total).</p>
+      <br>
+      <p class="p2"> <strong> 3. Internet: </strong>responsável pela identificação e roteamento dos pacotes entre redes
+        diferentes; utiliza principalmente o protocolo IP, além de ICMP e ARP.</p>
+      <br>
+      <p class="p2"> <strong> 4. Acesso à Rede: </strong>trata da comunicação física, como transmissão de quadros,
+        endereços MAC, Ethernet, Wi-Fi e demais tecnologias de acesso ao meio.</p>
+    </section>
+
+    <section class="p0">
+      <p class="p1">Protocolo IP V4</p>
+      <br>
+      <p class="p2">O IPv4 (Internet Protocol Version 4) é a versão mais antiga e ainda amplamente utilizada do
+        protocolo IP, responsável por identificar dispositivos em redes locais e na Internet por meio de um endereço
+        numérico. Cada endereço IPv4 possui 32 bits, divididos em quatro grupos de números separados por ponto, como
+        192.168.0.1, variando de 0 a 255. Essa estrutura permite aproximadamente 4,3 bilhões de endereços, quantidade
+        que se tornou limitada com o crescimento da Internet, motivando a criação do IPv6.</p>
+      <br>
+      <div class="img">
+        <img src="./img/ipv44.png" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p2">Apesar dessa limitação, o IPv4 continua sendo a base da maioria das redes devido à sua simplicidade,
+        compatibilidade e ao uso de técnicas que prolongam sua vida útil, como NAT e a criação de sub-redes. Em
+        essência, o IPv4 define como os dispositivos são identificados, localizados e conectados, tornando possível a
+        comunicação entre computadores, servidores, celulares e outros equipamentos no mundo inteiro.</p>
+      <br>
+      <br>
+      <p class="p1">Protocolo IP V6</p>
+      <br>
+      <p class="p2">O IPv6 (Internet Protocol Version 6) é a versão mais recente do protocolo IP, criada para substituir
+        o IPv4 e resolver o problema da falta de endereços disponíveis. Ele utiliza endereços de 128 bits, permitindo um
+        número extremamente maior de combinações — cerca de 340 undecilhões de endereços. Os endereços IPv6 são
+        representados em formato hexadecimal e divididos por dois-pontos, por exemplo:
+        2001:0db8:85a3:0000:0000:8a2e:0370:7334, oferecendo muito mais espaço, eficiência e flexibilidade para o
+        crescimento da Internet.</p>
+      <br>
+      <div class="img">
+        <img src="./img/ipv6.webp" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p2">Além de expandir a quantidade de endereços, o IPv6 traz melhorias importantes, como maior segurança
+        integrada, configuração automática mais eficiente, melhor desempenho no roteamento e eliminação da necessidade
+        de técnicas como NAT. Dessa forma, o IPv6 foi projetado para sustentar a Internet moderna, suportando bilhões de
+        novos dispositivos, Internet das Coisas (IoT) e futuras tecnologias que dependem de conectividade constante.</p>
+    </section>
+
+    <section class="p0">
+      <p class="p1">Protocolo HTTP e HTTPS</p>
+      <br>
+      <p class="p2">O HTTP (HyperText Transfer Protocol) é um protocolo de comunicação usado para permitir que
+        navegadores e servidores troquem informações na Web. É ele que define como páginas, textos, imagens e outros
+        recursos são solicitados e enviados pela Internet. O HTTP funciona no modelo cliente-servidor, onde o navegador
+        faz uma requisição e o servidor responde com o conteúdo solicitado. Porém, o HTTP por si só não criptografa os
+        dados, deixando as informações vulneráveis a interceptações.</p>
+      <br>
+      <div class="img">
+        <img src="./img/diferencas-entre-http-e-https1.png" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p2">Já o HTTPS (HyperText Transfer Protocol Secure) é a versão segura do HTTP. Ele utiliza criptografia através do protocolo TLS/SSL, garantindo que os dados enviados entre o cliente e o servidor fiquem protegidos contra ataques, espionagem e modificações. Com HTTPS, informações como senhas, dados bancários e formulários são transmitidas de forma segura. Em resumo: HTTP é comunicação comum; HTTPS é comunicação criptografada e segura.</p>
+    </section>
+  </main>
+  <br>
+  <footer>
+    <p>By NextTheis &copy; &trade; </p>
+  </footer>
 </body>
+
 </html>
