@@ -346,6 +346,74 @@
       <br>
       <p class="p2">Já o HTTPS (HyperText Transfer Protocol Secure) é a versão segura do HTTP. Ele utiliza criptografia através do protocolo TLS/SSL, garantindo que os dados enviados entre o cliente e o servidor fiquem protegidos contra ataques, espionagem e modificações. Com HTTPS, informações como senhas, dados bancários e formulários são transmitidas de forma segura. Em resumo: HTTP é comunicação comum; HTTPS é comunicação criptografada e segura.</p>
     </section>
+
+    <section class="p0">
+  <p class="p1">Como é configurado o IP e o TCP em uma programação backend com Node.js?</p>
+  <br>
+  <p class="p2">O código cria um servidor HTTP básico usando o módulo interno <code>http</code> do Node.js. Nesse tipo de servidor, o Node utiliza o protocolo TCP automaticamente para transportar as requisições e respostas entre o cliente e o servidor. O desenvolvedor não precisa configurar TCP manualmente, pois o Node abstrai essa parte.</p>
+  <br>
+  <div class="img">
+    <img src="./img/nodejs.png" alt="img-ip-tcp-node">
+  </div>
+  <br>
+  <p class="p2">No exemplo mostrado, a função <code>http.createServer((req, res) => { ... })</code> cria o servidor responsável por receber requisições e enviar respostas. Dentro dela, o método <code>res.writeHead()</code> define o tipo de conteúdo retornado, enquanto <code>res.end()</code> envia a mensagem final ao cliente.</p>
+  <br>
+  <p class="p2">A configuração do IP e da porta é feita usando as constantes <code>HOST</code> e <code>PORT</code>. O IP <code>0.0.0.0</code> permite que o servidor aceite conexões vindas de qualquer dispositivo da rede, enquanto a porta define o canal de comunicação utilizado. Esses valores são passados para <code>server.listen(PORT, HOST)</code>, que inicia o servidor e o coloca disponível para conexões TCP.</p>
+  <br>
+  <p class="p2">Como o HTTP funciona sobre TCP, cada requisição feita pelo navegador é enviada através de uma conexão TCP para o endereço indicado. O Node.js trata essa comunicação de baixo nível automaticamente, permitindo que o programador trabalhe diretamente com <code>req</code> e <code>res</code> de forma simples.</p>
+  <br>
+  <p class="p2">Assim, o código demonstra claramente como o IP e a porta definem onde o servidor ficará acessível, enquanto o Node se encarrega de toda a lógica de transporte de dados via TCP, deixando o desenvolvimento backend mais rápido e intuitivo.</p>
+  <br>
+  <br>
+  <p class="p1">Exemplo de um framework para programação do protocolo HTTP com uso do node.js</p>
+  <br>
+  <p class="p2">Express.js é um dos frameworks mais populares e amplamente utilizados no desenvolvimento backend com Node.js. Ele simplifica a criação de servidores HTTP ao oferecer uma estrutura leve, flexível e fácil de usar, permitindo que o programador defina rotas, trate requisições e respostas e utilize middlewares para adicionar funcionalidades como autenticação, logs, tratamento de erros e muito mais. Por ser minimalista, o Express permite que você construa desde aplicações simples até APIs complexas com alta performance.</p>
+  <br>
+  <div class="img">
+    <img src="./img/capturahttp.png" alt="img-ip-tcp-node">
+  </div>
+  <br>
+  <p class="p2">Além disso, o Express possui uma enorme comunidade e um ecossistema rico de bibliotecas e extensões, o que facilita a integração com bancos de dados, templates de visualização, serviços externos e outras ferramentas modernas de desenvolvimento. Sua estrutura modular torna o código organizado, escalável e fácil de manter, sendo uma das escolhas preferidas para criar APIs REST, servidores web e aplicações de grande porte.</p>
+</section>
+
+<section class="p0">
+  <p class="p1">Nosso projeto de redes</p>
+  <br>
+  <p class="p2">Confira nosso projeto que integra um servidor back-end, uma interface front-end e a comunicação em C++ com o Arduino, permitindo o acionamento automático do LED tanto por uma tecla pressionada no teclado quanto por um clique do mouse.</p>
+  <br>
+  <p class="p3">Código em back-end:</p>
+<br>
+ <div class="img">
+    <img src="./img/back-end1.png" alt="img-ip-tcp-node">
+  </div>
+  <br>
+  <div class="img">
+    <img src="./img/bavk-end2.png" alt="img-ip-tcp-node">
+  </div>
+  <br>
+  <div class="img">
+    <img src="./img/back-end3.png" alt="img-ip-tcp-node">
+  </div>
+  <br>
+  <p class="p3">Código em front-end</p>
+  <br>
+   <div class="img">
+    <img src="./img/front-end.png" alt="img-ip-tcp-node">
+  </div>
+  <br>
+  <p class="p3">Código C++</p>
+  <br>
+   <div class="img">
+    <img src="./img/c++cod.png" alt="img-ip-tcp-node">
+  </div>
+  <br>
+  <br>
+  <p class="p3">Vídeo do projeto:</p>
+  <br>
+  <div class="btn">
+    <a href="https://youtube.com/shorts/qgqHPfU58es?si=stPiKYhSEd1QIe7O" target="_blank" class="btn-codigo">Link do vídeo</a>
+  </div>
+</section>
   </main>
   <br>
   <footer>
