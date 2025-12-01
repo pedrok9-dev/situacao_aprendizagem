@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/ChatGPT_Image_1_12_2025__19_52_46-removebg-preview.png" type="image/png">
     <script src="./java.js"defer></script>
     <title>banco de dados</title>
 </head>
@@ -26,19 +27,90 @@
         <span></span>
         <span></span>
       </div>
-      <h1 class="marca">NextTheis</h1>
+      <h1 class="marca">NexTheis</h1>
     </nav>
     </header>
     <br>
     <br>
     <main>
-      <h1>Banco de dados</h1>
+      <h1 class="titulo">Banco de dados</h1>
       <br>
-        <p>a definir...</p>
+      <section class="p0">
+<p class="p1">O que é um SGBD? Tipos e Aplicações</p>
+<br>
+<p class="p2">Um SGBD (Sistema de Gerenciamento de Banco de Dados) é um software responsável por criar, administrar, organizar e controlar o acesso a bancos de dados. Ele permite armazenar informações de forma estruturada e segura, garantindo que usuários e sistemas possam inserir, consultar, atualizar e excluir dados de maneira eficiente.</p>
+<br>
+<p class="p2">Existem vários tipos de SGBDs, como os relacionais (que usam tabelas), os NoSQL (voltados para dados mais flexíveis), os hierárquicos, os orientados a objetos e os SGBDs em nuvem. Cada tipo atende necessidades diferentes, desde sistemas simples até aplicações de grande escala.</p>
+<br>
+<div class="img">
+        <img src="./img/sgbd.jpg" alt="img-algoritimo">
+      </div>
+</section>
+
+
+<section class="p0">
+<p class="p1">Quais os Principais Bancos de Dados?</p>
+<br>
+<p class="p2">Os bancos de dados mais utilizados no mercado são aqueles que combinam desempenho, segurança e facilidade de integração com sistemas modernos. Entre os relacionais, destacam-se MySQL, PostgreSQL, Oracle, SQL Server e MariaDB. Eles são amplamente usados por empresas, sites e aplicativos que necessitam de tabelas organizadas e consultas estruturadas.</p>
+<br>
+<div class="img">
+        <img src="./img/bancodedados.jpg" alt="img-algoritimo">
+      </div>
+      <br>
+<p class="p2">Entre os bancos NoSQL, os mais populares são MongoDB, Firebase, Cassandra e Redis. Eles são ideais para aplicações que precisam lidar com grandes volumes de dados, informações não estruturadas ou atualizações rápidas, como redes sociais, jogos online e sistemas distribuídos.</p>
+<br>
+<div class="img">
+        <img src="./img/nosql.png" alt="img-algoritimo">
+      </div>
+</section>
+
+
+<section class="p0">
+<p class="p1">O que é um Dicionário de Dados e Tipos de Dados</p>
+<br>
+<p class="p2">O dicionário de dados é um conjunto de informações que descreve todos os elementos presentes no banco de dados. Ele explica o significado dos campos, os tipos de dados utilizados, relacionamentos, restrições e regras de negócio. É essencial para documentação e desenvolvimento de sistemas bem estruturados.</p>
+<br>
+<p class="p2">Os tipos de dados mais comuns em um banco incluem números inteiros (INT), números decimais (FLOAT, DECIMAL), textos curtos (VARCHAR), textos longos (TEXT), datas e horários (DATE, TIME, DATETIME), valores booleanos (TRUE/FALSE) e tipos especiais como JSON, BLOB e ENUM.</p>
+</section>
+
+
+<section class="p0">
+<p class="p1">Modelagem de Banco de Dados, DER e MER</p>
+<br>
+<p class="p2">A modelagem de banco de dados é o processo de planejar e organizar como as informações serão armazenadas. Através dela, criamos estruturas lógicas e coerentes que facilitam o entendimento e a manutenção do sistema. Uma boa modelagem reduz erros, evita redundâncias e melhora o desempenho.</p>
+<br>
+<p class="p2">O DER (Diagrama Entidade-Relacionamento) é uma representação visual das entidades do sistema e dos relacionamentos entre elas. Já o MER (Modelo Entidade-Relacionamento) descreve essas entidades de forma mais detalhada, definindo atributos, cardinalidade e regras de associação.</p>
+<br>
+<p class="p2">Ambos são fundamentais no desenvolvimento de sistemas, pois auxiliam na criação do banco de dados final usado pelo SGBD.</p>
+<br>
+</section>
+
+<section class="p0">
+  <p class="p1">Diagrma DER explicado</p>
+  <br>
+  <div class="img">
+        <img src="./img/deer.png" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p2">O diagrama representa um sistema imobiliário composto por quatro entidades: Proprietário, Corretor, Imóvel e Inquilino. O proprietário possui um relacionamento 1 para n com o imóvel, indicando que um proprietário pode ter vários imóveis. O Corretor se relaciona tanto com proprietários quanto com inquilinos em relações n para n, já que pode atender vários clientes e ser contactado por muitos deles.O diagrama representa um sistema imobiliário composto por quatro entidades: Proprietário, Corretor, Imóvel e Inquilino. O proprietário possui um relacionamento 1 para n com o imóvel, indicando que um proprietário pode ter vários imóveis. O Corretor se relaciona tanto com proprietários quanto com inquilinos em relações n para n, já que pode atender vários clientes e ser contactado por muitos deles.</p>
+      <br>
+      <p class="p2">O Imóvel possui uma relação 1 para n com o inquilino no processo de aluguel: cada imóvel é alugado para um inquilino por vez, mas um inquilino pode alugar vários imóveis. Assim, o DER organiza como proprietários, corretores, imóveis e inquilinos interagem dentro do sistema de uma imobiliária.</p>
+      <br>
+      <br>
+  <p class="p1">Diagrma MER explicado</p>
+  <br>
+  <div class="img">
+        <img src="./img/mer.png" alt="img-algoritimo">
+      </div>
+      <br>
+      <p class="p2">O diagrama apresenta três entidades principais: Médico, Paciente e o relacionamento Atendimento. A entidade Médico possui dois atributos: nome e código_CRM, que identificam e caracterizam o profissional. A entidade Paciente também possui atributos próprios: nome, CPF e Telefone (que está representado como atributo multivalorado, pois o paciente pode ter mais de um número). Além disso, o paciente possui um atributo composto chamado Endereço, dividido em Rua, Número e Bairro.</p>
+      <br>
+      <p class="p2">O relacionamento Atendimento liga o médico ao paciente e possui um atributo próprio: data, indicando quando o atendimento ocorreu. Assim, cada atendimento é um evento que envolve um médico que atende um paciente em uma determinada data.</p>
+</section>
     </main>
     <br>
     <footer>
-      <p>By NextTheis &copy; &trade; </p>
+      <p>By NexTheis &copy; &trade; </p>
     </footer>
 </body>
 </html>
