@@ -9,9 +9,11 @@
 a {
     color: white;
 }
+
 a:visited {
     color: white;
 }
+
 a:hover {
     color: #ffffff;
 }
@@ -22,7 +24,7 @@ body {
 }
 
 .off-screen-menu {
-    background-color:  #333;
+    background-color: #333;
     height: 350px;
     width: 500px;
     position: fixed;
@@ -30,13 +32,14 @@ body {
     left: -500px;
     display: flex;
     flex-direction: row;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
     text-align: left;
     font-size: 1.5rem;
     transition: .3s ease;
     border-radius: 10px;
 }
+
 .off-screen-menu.active {
     left: 0;
 }
@@ -53,6 +56,7 @@ nav {
     margin-right: auto;
     position: relative;
 }
+
 .ham-menu span {
     height: 5px;
     width: 100%;
@@ -64,28 +68,34 @@ nav {
     transform: translate(-50%, -50%);
     transition: .3s ease;
 }
+
 .ham-menu span:nth-child(1) {
     top: 25%;
 }
+
 .ham-menu span:nth-child(3) {
     top: 75%;
 }
+
 .ham-menu.active span {
     background-color: white;
 }
+
 .ham-menu.active span:nth-child(1) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
+
 .ham-menu.active span:nth-child(2) {
     opacity: 0;
 }
+
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-footer{
+footer {
     background-color: #333;
     font-family: 'Gill Sans';
     color: rgb(255, 255, 255);
@@ -97,119 +107,120 @@ footer{
     font-size: 0.9rem;
 }
 
-.marca{
+.marca {
     font-family: 'Gill Sans';
     color: white;
     align-items: center;
 }
 
-.titulo{
-   font-family: 'Gill Sans';
-   text-align: center;
-   font-size: 3rem;
+.titulo {
+    font-family: 'Gill Sans';
+    text-align: center;
+    font-size: 3rem;
 }
 
 .p0 {
     font-family: 'Gill Sans';
-    max-width: 900px;                
-    margin: 80px auto;               
-    padding: 40px 60px;              
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px 60px;
     background-color: white;
     font-size: 1.2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
-    line-height: 1.6;                
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
 }
 
 .p1 {
     font-size: 2rem;
     text-align: center;
     margin-top: 40px;
-    color: #333;                     
+    color: #333;
 }
 
-.p3{
+.p3 {
     font-size: 1.4rem;
     text-align: center;
     margin-top: 40px;
-    color: #1f1f1f; 
+    color: #1f1f1f;
 }
 
-.p2{
+.p2 {
     text-align: justify;
 }
 
-.tabela1{
+.tabela1 {
     background-color: #b4b4b4;
 }
-.tabela2{
+
+.tabela2 {
     background-color: #dadada;
 }
 
 .container {
-  position: relative; 
-  width: 600px;
+    position: relative;
+    width: 600px;
 }
 
 .imagem {
-  width: 100%;
-  display: block;
-  border-radius: 8px;
+    width: 100%;
+    display: block;
+    border-radius: 7px;
 }
 
 .texto-escondido {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); 
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-  font-size: 1.2rem;
-  padding: 20px;
-  opacity: 0;              
-  transition: opacity 0.4s;
-  border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    border-radius: 8px;
 }
 
 
 .container:hover .texto-escondido {
-  opacity: 1; 
+    opacity: 1;
 }
 
-.img{
+.img {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
-button{
+button {
     border-radius: 4px;
     background-color: #333;
     color: white;
-    padding: 10px 20px; 
-    font-size: 16px;   
-    min-width: 120px;  
+    padding: 10px 20px;
+    font-size: 16px;
+    min-width: 120px;
     cursor: pointer;
 }
 
-.scripts{
+.scripts {
     border: 2px solid #444;
     border-radius: 6px;
     padding: 10px;
 }
 
-.p4{
+.p4 {
     font-size: 1.4rem;
     margin-top: 40px;
-    color: #333; 
+    color: #333;
 }
 
-.btn{
+.btn {
     display: flex;
     justify-content: center;
 }

@@ -253,11 +253,13 @@ function coren(){
     res11.innerHTML += `A Corrente é de ${coren.toFixed(2)}A`  
 }
 
+let res10 = document.getElementById('res10')
+
 function poten(){
     let coren4 = Number(document.getElementById('coren4').value);
     let tens4 = Number(document.getElementById('tens4').value);
     let poten = tens4 / coren4    
-    res11.innerHTML = ` `
+    res10.innerHTML = ` `
 
-    res11.innerHTML += `A Potência é de ${poten.toFixed(2)}W`  
+    res10.innerHTML += `A Potência é de ${poten.toFixed(2)}W`  
 }
